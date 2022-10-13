@@ -1,0 +1,98 @@
+.header {
+  background-color: $C12-color-black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: calculator-rem(20);
+  justify-content: space-between;
+  align-items: center;
+  padding: calculator-rem(20);
+  max-width: $container-l;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__menu {
+    &--list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: calculator-rem(40);
+
+      a {
+        color: $C00-color-white;
+        padding-bottom: calculator-rem(16);
+        padding-top: calculator-rem(16);
+        display: inline-block;
+        font-size: calculator-rem(18);
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          height: calculator-rem(2);
+          width: 0px;
+          background-color: $C00-color-white;
+          margin-top: calculator-rem(4);
+          transition: 0.3s;
+          position: absolute;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $container-m) {
+  .header {
+    &__menu {
+      &--list {
+        gap: calculator-rem(20);
+        a {
+          background-color: $C11-color-black;
+          padding-bottom: calculator-rem(12);
+          padding-top: calculator-rem(12);
+          padding-left: calculator-rem(16);
+          padding-right: calculator-rem(16);
+          border-radius: calculator-rem(4);
+
+          &::after {
+            display: none;
+          }
+
+          &:hover::after {
+            display: none;
+          }
+
+          &:hover {
+            cursor: pointer;
+            background-color: $C10-color-grey;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $container-s) {
+  .header {
+    &__menu {
+      &--list {
+        gap: calculator-rem(12);
+        a {
+          background-color: $C11-color-black;
+          padding-bottom: calculator-rem(8);
+          padding-top: calculator-rem(8);
+          padding-left: calculator-rem(12);
+          padding-right: calculator-rem(12);
+          border-radius: calculator-rem(4);
+          font-size: calculator-rem(14);
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
