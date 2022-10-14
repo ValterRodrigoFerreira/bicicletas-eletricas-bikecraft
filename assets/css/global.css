@@ -7,17 +7,28 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-img,
 svg {
   display: block;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
   list-style: none;
+}
+
+h1,
+ul,
+p {
+  margin: 0px;
 }
 
 /*--colors--*/
@@ -256,4 +267,28 @@ li {
   .header__menu--list a::after {
     display: none;
   }
+}
+.introducao {
+  background-color: #000000;
+}
+.introducao__conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  color: #ffffff;
+}
+.introducao__conteudo--info {
+  align-self: flex-end;
+  padding-bottom: 5rem;
+}
+.introducao__conteudo--info h1 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  line-height: 4.5rem;
+}
+.introducao__conteudo--info p {
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #b2b2b2;
 }/*# sourceMappingURL=global.css.map */

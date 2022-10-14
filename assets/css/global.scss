@@ -7,17 +7,28 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-img,
 svg {
   display: block;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
   list-style: none;
+}
+
+h1,
+ul,
+p {
+  margin: 0px;
 }
 
 $container-l: 1200px;
@@ -27,3 +38,4 @@ $container-s: 600px;
 @import "partius/colors.scss";
 @import "partius/mixin";
 @import "./partius/_header.scss";
+@import "./partius/layout.scss";

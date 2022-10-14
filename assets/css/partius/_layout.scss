@@ -1,0 +1,28 @@
+.introducao {
+  background-color: $C12-color-black;
+  &__conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+
+    color: $C00-color-white;
+
+    &--info {
+      align-self: flex-end;
+      padding-bottom: calculator-rem(80);
+
+      h1 {
+        margin-bottom: calculator-rem(32);
+        font-size: calculator-rem(64);
+        line-height: calculator-rem(72);
+      }
+
+      p {
+        margin-bottom: calculator-rem(20);
+        font-size: calculator-rem(24);
+        line-height: calculator-rem(36);
+        color: $C05-color-grey;
+      }
+    }
+  }
+}
