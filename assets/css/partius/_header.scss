@@ -23,6 +23,8 @@
         display: inline-block;
         font-size: calculator-rem(18);
         position: relative;
+        font-family: "Poppins";
+        font-weight: 400;
 
         &::after {
           content: "";
