@@ -49,3 +49,12 @@ $gutter: 24px;
     }
   }
 }
+
+@mixin container {
+  box-sizing: border-box;
+  max-width: $container-l;
+  padding-left: calculator-rem(20);
+  padding-right: calculator-rem(20);
+  margin-left: auto;
+  margin-right: auto;
+}

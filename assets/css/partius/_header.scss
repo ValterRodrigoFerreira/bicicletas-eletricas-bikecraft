@@ -1,14 +1,13 @@
 .header {
+  @include container;
+  padding-top: calculator-rem(20);
+  padding-bottom: calculator-rem(20);
   background-color: $C12-color-black;
   display: flex;
   flex-wrap: wrap;
   gap: calculator-rem(20);
   justify-content: space-between;
   align-items: center;
-  padding: calculator-rem(20);
-  max-width: $container-l;
-  margin-left: auto;
-  margin-right: auto;
 
   &__menu {
     &--list {
@@ -17,14 +16,12 @@
       gap: calculator-rem(40);
 
       a {
+        @include font-1-m;
         color: $C00-color-white;
         padding-bottom: calculator-rem(16);
         padding-top: calculator-rem(16);
         display: inline-block;
-        font-size: calculator-rem(18);
         position: relative;
-        font-family: "Poppins";
-        font-weight: 400;
 
         &::after {
           content: "";

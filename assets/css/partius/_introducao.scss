@@ -1,11 +1,6 @@
 .introducao {
-  max-width: $container-l;
-  box-sizing: border-box;
+  @include container;
   background-color: $C12-color-black;
-  padding-left: calculator-rem(20);
-  padding-right: calculator-rem(20);
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: inset 0 -120px $C00-color-white;
 
   &__conteudo {
@@ -21,10 +16,8 @@
 
       h1 {
         margin-bottom: calculator-rem(32);
-        font-size: calculator-rem(64);
-        line-height: calculator-rem(72);
-        font-family: "poppins";
-        font-weight: 600;
+        color: $C00-color-white;
+        @include font-1-xxl;
 
         span {
           color: $p1-color-yellow;
@@ -33,11 +26,8 @@
 
       p {
         margin-bottom: calculator-rem(20);
-        font-size: calculator-rem(24);
-        line-height: calculator-rem(36);
         color: $C05-color-grey;
-        font-family: "roboto";
-        font-weight: 400;
+        @include font-2-l;
       }
     }
   }

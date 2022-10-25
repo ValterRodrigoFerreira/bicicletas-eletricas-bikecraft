@@ -1,0 +1,93 @@
+@mixin font-1-xs {
+  font-size: calculator-rem(12);
+  line-height: calculator-rem(16);
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-2-xs {
+  font-size: calculator-rem(14);
+  line-height: calculator-rem(20);
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-1-s {
+  font-size: calculator-rem(16);
+  line-height: calculator-rem(24);
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-2-s {
+  font-size: calculator-rem(12);
+  line-height: calculator-rem(16);
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-1-m {
+  font-size: calculator-rem(18);
+  line-height: calculator-rem(21);
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-1-m-b {
+  font-size: calculator-rem(18);
+  line-height: calculator-rem(21);
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+}
+
+@mixin font-2-m {
+  font-size: calculator-rem(18);
+  line-height: calculator-rem(21);
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+}
+
+@mixin font-1-l {
+  font-size: calculator-rem(24);
+  line-height: calculator-rem(36);
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-2-l {
+  font-size: calculator-rem(24);
+  line-height: calculator-rem(36);
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-2-l-b {
+  font-size: calculator-rem(24);
+  line-height: calculator-rem(36);
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+@mixin font-1-xl {
+  font-size: calculator-rem(32);
+  line-height: calculator-rem(20);
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+}
+
+@mixin font-2-xl {
+  font-size: calculator-rem(32);
+  line-height: calculator-rem(20);
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+}
+
+@mixin font-1-xxl {
+  font-size: calculator-rem(64);
+  line-height: calculator-rem(72);
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  //font: 600 4rem/1.125 "poppins", sans-serif;
+}
