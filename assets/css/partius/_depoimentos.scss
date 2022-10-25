@@ -1,0 +1,98 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $p1-color-yellow;
+  overflow: hidden;
+
+  &__imagem {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0px;
+    }
+  }
+
+  &__conteudo {
+    padding: 40px 40px 80px 80px;
+    align-self: end;
+
+    &--cliente {
+      color: #332200;
+      @include font-1-xl;
+      line-height: initial;
+
+      p {
+        font-family: "Merriweather", serif;
+        font-style: italic;
+        font-weight: 900;
+        margin-bottom: 32px;
+        max-width: 32ch;
+        position: relative;
+
+        &::before {
+          content: " “ ";
+          font-size: calculator-rem(80);
+          color: $p2-color-yellow;
+          position: absolute;
+          left: -55px;
+          top: -35px;
+        }
+
+        &::after {
+          content: " ” ";
+          font-size: calculator-rem(80);
+          color: $p2-color-yellow;
+          position: absolute;
+        }
+      }
+
+      span {
+        @include font-1-m-b;
+        color: $p4-color-yellow;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    &__imagem {
+      img {
+        max-height: 200px;
+      }
+    }
+
+    &__conteudo {
+      padding: 40px 20px;
+      justify-self: center;
+      &--cliente {
+        p {
+          &::before {
+            content: " “ ";
+            font-size: calculator-rem(80);
+            color: $p2-color-yellow;
+            position: absolute;
+            left: -55px;
+            top: -35px;
+          }
+
+          &::after {
+            content: " ” ";
+            font-size: calculator-rem(80);
+            color: $p2-color-yellow;
+            position: absolute;
+          }
+        }
+
+        span {
+          @include font-1-m-b;
+          color: $p4-color-yellow;
+        }
+      }
+    }
+  }
+}

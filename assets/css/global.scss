@@ -39,7 +39,8 @@ h2,
 h3,
 h4,
 ul,
-p {
+p,
+blockquote {
   margin: 0px;
 }
 
@@ -80,3 +81,4 @@ $container-s: 600px;
 @import "./partius/bicicletas.scss";
 @import "./partius/tecnologia.scss";
 @import "./partius/parceiros.scss";
+@import "./partius/depoimentos.scss";

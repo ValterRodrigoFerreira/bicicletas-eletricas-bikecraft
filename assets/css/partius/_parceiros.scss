@@ -54,6 +54,8 @@
     &__lista {
       grid-template-columns: repeat(2, 1fr);
       li {
+        padding: calculator-rem(20);
+
         &:nth-child(odd) {
           border: none;
         }
