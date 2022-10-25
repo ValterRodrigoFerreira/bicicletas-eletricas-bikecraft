@@ -76,3 +76,26 @@ $gutter: 24px;
     background: linear-gradient(#ffb60d, #e59317);
   }
 }
+
+@mixin link {
+  display: inline-block;
+  color: $p1-color-yellow;
+  font-weight: 500;
+  font-size: calculator-rem(24);
+  line-height: calculator-rem(24);
+  font-family: "poppins", sans-serif;
+  text-decoration: underline;
+  text-transform: uppercase;
+
+  .link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: calculator-rem(4);
+    background-color: currentColor;
+  }
+
+  &:hover {
+    color: #ffffff;
+  }
+}

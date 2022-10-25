@@ -73,9 +73,10 @@ $container-m: 800px;
 $container-s: 600px;
 
 @import "partius/colors.scss";
-@import "partius/mixin";
-@import "partius/tipografia";
+@import "partius/mixin.scss";
+@import "partius/tipografia.scss";
 @import "./partius/_header.scss";
 @import "./partius/introducao.scss";
 @import "./partius/bicicletas.scss";
 @import "./partius/tecnologia.scss";
+@import "./partius/parceiros.scss";
