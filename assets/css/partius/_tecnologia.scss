@@ -11,6 +11,7 @@
   &__conteudo {
     padding-top: calculator-rem(160);
     padding-bottom: calculator-rem(160);
+    padding-left: calculator-rem(64);
 
     span {
       @include font-2-l-b;
@@ -25,6 +26,8 @@
       margin-bottom: calculator-rem(32);
 
       span {
+        @include font-1-xxl;
+        display: inline;
         color: $p1-color-yellow;
       }
     }

@@ -493,6 +493,7 @@ blockquote {
 .tecnologia__conteudo {
   padding-top: 10rem;
   padding-bottom: 10rem;
+  padding-left: 4rem;
 }
 .tecnologia__conteudo span {
   font-size: 1.5rem;
@@ -514,6 +515,11 @@ blockquote {
   margin-bottom: 2rem;
 }
 .tecnologia__conteudo h2 span {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  display: inline;
   color: #ffbb00;
 }
 .tecnologia__conteudo--paragrafo {
