@@ -1,0 +1,87 @@
+.seguros-bg {
+  background-color: $C11-color-black;
+}
+
+.seguros {
+  @include container;
+  padding-top: calculator-rem(60);
+  padding-bottom: calculator-rem(60);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calculator-rem(40);
+  align-items: center;
+
+  h2 {
+    grid-column: 1/-1;
+    @include font-1-xxl;
+    color: $C00-color-white;
+    margin-bottom: calculator-rem(32);
+
+    span {
+      @include font-1-xxl;
+      display: inline;
+      color: $p1-color-yellow;
+    }
+  }
+
+  &__item {
+    background-color: $C12-color-black;
+    padding: 32px 32px 32px 60px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    span {
+      @include font-1-xl;
+      line-height: calculator-rem(48);
+      color: $C00-color-white;
+      grid-column: 2;
+      display: block;
+      text-align: right;
+    }
+
+    span:first-child {
+      @include font-1-xs;
+      color: $C06-color-grey;
+      grid-column: 2;
+    }
+  }
+
+  &__beneficios {
+    @include font-2-m;
+    color: $C00-color-white;
+
+    grid-column: 1/-1;
+    margin-bottom: calculator-rem(32);
+
+    li {
+      color: $C00-color-white;
+      line-height: calculator-rem(40);
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 13px;
+        height: 9px;
+        background-image: url("../../images/img/icones/lista.svg");
+      }
+    }
+
+    a {
+      grid-column: 1/-1;
+    }
+  }
+}
+
+.titulo-prata {
+  @include font-1-xl;
+  color: $C06-color-grey;
+  text-transform: uppercase;
+  margin-bottom: calculator-rem(40);
+}
+
+.titulo-ouro {
+  @include font-1-xl;
+  color: $p1-color-yellow;
+  text-transform: uppercase;
+  margin-bottom: calculator-rem(40);
+}
