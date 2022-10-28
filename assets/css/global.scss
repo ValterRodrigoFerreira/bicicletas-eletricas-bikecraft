@@ -8,10 +8,6 @@
   color: #111111;
 }
 
-body {
-  padding-bottom: 600px;
-}
-
 svg {
   display: block;
 }
@@ -56,6 +52,7 @@ blockquote {
   line-height: 21px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
+  max-width: max-content;
 
   .botao:hover {
     background: linear-gradient(#ffb60d, #e59317);
@@ -75,6 +72,7 @@ blockquote {
   line-height: 21px;
   font-family: "poppins", sans-serif;
   font-weight: 600;
+  max-width: max-content;
 
   .botao-secundario:hover {
     background-color: #404040;
@@ -102,3 +100,4 @@ $container-s: 600px;
 @import "./partius/parceiros.scss";
 @import "./partius/depoimentos.scss";
 @import "./partius/seguros.scss";
+@import "./partius/footer.scss";

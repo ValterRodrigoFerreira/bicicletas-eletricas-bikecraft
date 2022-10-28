@@ -1,0 +1,109 @@
+.footer-bg {
+  background-color: $C12-color-black;
+}
+
+.footer {
+  @include container;
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  h3 {
+    margin-bottom: calculator-rem(32);
+  }
+
+  a:hover {
+    color: $C00-color-white;
+  }
+
+  &__contato {
+    h3 {
+      @include font-2-l-b;
+      color: $C00-color-white;
+    }
+
+    &--lista {
+      li {
+        @include font-2-m;
+        color: $C05-color-grey;
+        margin-bottom: calculator-rem(32);
+
+        &:nth-child(even):after {
+          content: "";
+          display: block;
+          max-width: 360px;
+          height: 2px;
+          background-color: $C11-color-black;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+
+  &__redes {
+    display: flex;
+    gap: calculator-rem(32);
+  }
+
+  &__informacoes {
+    h3 {
+      @include font-2-l-b;
+      color: $C00-color-white;
+      columns: 4/4;
+    }
+
+    &--list {
+      li {
+        @include font-1-m;
+        color: $C05-color-grey;
+        margin-bottom: calculator-rem(32);
+      }
+    }
+  }
+
+  &__copy {
+    @include font-2-m;
+    color: $C06-color-grey;
+    grid-column: 1/-1;
+    margin-top: calculator-rem(40);
+  }
+}
+
+.img-redesocial {
+  transition: 0.5 ease;
+
+  &:hover {
+    transform: translateY(-5px);
+
+    &::before {
+      color: $C00-color-white;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .img-bikecraft {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: calculator-rem(60);
+
+    &__copy {
+      margin-top: calculator-rem(0);
+    }
+  }
+
+  .img-bikecraft {
+    display: none;
+  }
+}

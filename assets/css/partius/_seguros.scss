@@ -49,20 +49,22 @@
   &__beneficios {
     @include font-2-m;
     color: $C00-color-white;
-
     grid-column: 1/-1;
     margin-bottom: calculator-rem(32);
 
     li {
       color: $C00-color-white;
       line-height: calculator-rem(40);
+      position: relative;
 
       &::before {
-        content: "";
+        content: "✓";
+        color: $p1-color-yellow;
         display: inline-block;
         width: 13px;
         height: 9px;
-        background-image: url("../../images/img/icones/lista.svg");
+        position: absolute;
+        left: -21px;
       }
     }
 
@@ -84,4 +86,10 @@
   color: $p1-color-yellow;
   text-transform: uppercase;
   margin-bottom: calculator-rem(40);
+}
+
+@media (max-width: 800px) {
+  .seguros {
+    grid-template-columns: 1fr;
+  }
 }
