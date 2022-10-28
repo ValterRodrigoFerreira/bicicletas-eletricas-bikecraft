@@ -1,0 +1,70 @@
+.perguntas {
+  @include container;
+  padding-top: calculator-rem(120);
+  padding-bottom: calculator-rem(120);
+  background-color: $C00-color-white;
+
+  h2 {
+    @include font-1-xxl;
+    color: $C11-color-black;
+    margin-bottom: calculator-rem(60);
+
+    span {
+      color: $p1-color-yellow;
+    }
+  }
+
+  &__dl {
+    &--div {
+      padding: 20px;
+      border-radius: 20px;
+
+      &:nth-child(odd) {
+        background-color: $C02-color-white;
+      }
+
+      dt {
+        @include font-1-m-b;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 12px;
+          height: 8px;
+          background-color: $p1-color-yellow;
+        }
+
+        &::after {
+          content: " ^";
+          display: inline-block;
+          width: 0px;
+          height: 0px;
+        }
+      }
+
+      dd {
+        @include font-2-s;
+        color: $C09-color-grey;
+        padding-left: calculator-rem(20);
+        padding-top: calculator-rem(16);
+        max-width: 80ch;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .perguntas {
+    padding-top: calculator-rem(60);
+    padding-bottom: calculator-rem(60);
+
+    h2 {
+      margin-bottom: calculator-rem(40);
+    }
+  }
+}

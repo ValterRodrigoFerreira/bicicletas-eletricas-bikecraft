@@ -1,0 +1,57 @@
+#seguros-pagina {
+  .seguros {
+    padding-top: 0px;
+  }
+}
+
+.vantagens-bg {
+  background-color: $C12-color-black;
+}
+
+.vantagens {
+  @include container;
+  padding-top: calculator-rem(120);
+  padding-bottom: calculator-rem(120);
+
+  h2 {
+    @include font-1-xxl;
+    color: $C00-color-white;
+    margin-bottom: calculator-rem(60);
+    span {
+      color: $p1-color-yellow;
+    }
+  }
+
+  &__itens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+    gap: 40px 80px;
+
+    &--lista {
+      img {
+        margin-bottom: calculator-rem(8);
+      }
+      h3 {
+        @include font-1-l;
+        color: $C00-color-white;
+        margin-bottom: calculator-rem(8);
+      }
+      p {
+        @include font-2-s;
+        color: $C05-color-grey;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .vantagens {
+    @include container;
+    padding-top: calculator-rem(60);
+    padding-bottom: calculator-rem(60);
+
+    h2 {
+      margin-bottom: calculator-rem(40);
+    }
+  }
+}

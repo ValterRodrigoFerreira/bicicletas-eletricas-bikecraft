@@ -13,15 +13,15 @@
 }
 
 @mixin font-1-s {
-  font-size: calculator-rem(16);
+  font-size: calculator-rem(18);
   line-height: calculator-rem(24);
   font-family: "poppins", sans-serif;
   font-weight: 400;
 }
 
 @mixin font-2-s {
-  font-size: calculator-rem(12);
-  line-height: calculator-rem(16);
+  font-size: calculator-rem(18);
+  line-height: calculator-rem(24);
   font-family: "roboto", sans-serif;
   font-weight: 400;
 }

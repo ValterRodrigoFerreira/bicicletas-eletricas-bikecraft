@@ -37,7 +37,8 @@ h3,
 h4,
 ul,
 p,
-blockquote {
+blockquote,
+dd {
   margin: 0px;
 }
 
@@ -590,8 +591,8 @@ blockquote {
   width: max-content;
 }
 .tecnologia__acessorios p {
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   font-family: "roboto", sans-serif;
   font-weight: 400;
   color: #b2b2b2;
@@ -888,6 +889,7 @@ blockquote {
   padding: 32px 32px 32px 60px;
   display: grid;
   grid-template-columns: 1fr auto;
+  border-radius: 4px;
 }
 .seguros__item span {
   font-size: 2rem;
@@ -1130,8 +1132,8 @@ blockquote {
   margin-top: 2.5rem;
 }
 .termos p {
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   font-family: "roboto", sans-serif;
   font-weight: 400;
   color: #2e2e2e;
@@ -1215,8 +1217,8 @@ blockquote {
   left: -16px;
 }
 .bicicletas__conteudo p {
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   font-family: "roboto", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
@@ -1290,5 +1292,147 @@ blockquote {
   }
   .bicicletas__conteudo--itens li a {
     place-self: start;
+  }
+}
+#seguros-pagina .seguros {
+  padding-top: 0px;
+}
+
+.vantagens-bg {
+  background-color: #000000;
+}
+
+.vantagens {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+.vantagens h2 {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 3.75rem;
+}
+.vantagens h2 span {
+  color: #ffbb00;
+}
+.vantagens__itens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, -webkit-max-content));
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px 80px;
+}
+.vantagens__itens--lista img {
+  margin-bottom: 0.5rem;
+}
+.vantagens__itens--lista h3 {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+.vantagens__itens--lista p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  color: #b2b2b2;
+}
+
+@media (max-width: 800px) {
+  .vantagens {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+  .vantagens h2 {
+    margin-bottom: 2.5rem;
+  }
+}
+.perguntas {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  background-color: #ffffff;
+}
+.perguntas h2 {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 3.75rem;
+}
+.perguntas h2 span {
+  color: #ffbb00;
+}
+.perguntas__dl--div {
+  padding: 20px;
+  border-radius: 20px;
+}
+.perguntas__dl--div:nth-child(odd) {
+  background-color: #ededed;
+}
+.perguntas__dl--div dt {
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.perguntas__dl--div dt::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: #ffbb00;
+}
+.perguntas__dl--div dt::after {
+  content: " ^";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+}
+.perguntas__dl--div dd {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  color: #404040;
+  padding-left: 1.25rem;
+  padding-top: 1rem;
+  max-width: 80ch;
+}
+
+@media (max-width: 800px) {
+  .perguntas {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+  .perguntas h2 {
+    margin-bottom: 2.5rem;
   }
 }/*# sourceMappingURL=global.css.map */
