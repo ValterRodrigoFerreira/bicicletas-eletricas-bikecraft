@@ -1,86 +1,144 @@
-.bicicletas {
-  padding-top: calculator-rem(60);
-  padding-bottom: calculator-rem(120);
+.bicicletas-bg {
+  background-image: linear-gradient(to right, #ffffff 30%, #111111 0%);
+}
 
-  h2 {
-    @include font-1-xxl;
-    @include container;
-    margin-bottom: calculator-rem(40);
+.bicicletas {
+  @include container;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calculator-rem(40);
+  padding-top: calculator-rem(60);
+  padding-bottom: calculator-rem(60);
+  align-content: start;
+
+  &__imagem {
+    display: grid;
+
+    img {
+      grid-area: 1/1;
+    }
 
     span {
-      color: $p1-color-yellow;
+      @include font-2-m;
+      font-size: calculator-rem(18);
+      color: $C00-color-white;
+      background-color: $C12-color-black;
+      padding: calculator-rem(8);
+      display: inline-block;
+      grid-area: 1/1;
+      place-self: start end;
+      margin-top: calculator-rem(20);
+      border-radius: 4px 0 0 4px;
     }
   }
 
-  &__listas {
-    display: flex;
-    gap: calculator-rem(40);
-    padding: 0 20px 20px 20px;
-    max-width: $container-xl;
-    margin-left: auto;
-    margin-right: auto;
-    overflow-x: auto;
+  &__conteudo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: start;
 
-    a {
-      display: block;
+    h2 {
+      @include font-1-xl;
+      grid-column: 1/-1;
+      margin-bottom: calculator-rem(20);
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 8px;
+        background-color: $p1-color-yellow;
+        position: absolute;
+        top: -16px;
+        left: -16px;
+      }
     }
 
-    img {
-      margin-bottom: calculator-rem(16);
+    p {
+      @include font-2-s;
+      font-size: calculator-rem(18);
+      line-height: 1.5rem;
+      color: $C08-color-grey;
+      grid-column: 1/-1;
+      margin-bottom: calculator-rem(32);
+    }
+
+    a {
+      place-self: end;
     }
 
     &--itens {
-      min-width: 280px;
+      @include font-1-m;
+      color: $C08-color-grey;
 
-      h3 {
-        @include font-1-xl;
-        margin-bottom: calculator-rem(8);
+      li {
         display: flex;
         align-items: center;
+        gap: 8px;
+        margin-bottom: 16px;
 
-        &::before {
-          content: "";
-          background-color: $p1-color-yellow;
-          height: 8px;
-          width: 12px;
-          margin-right: 8px;
-          display: inline-block;
-          transition: width 0.2s;
+        img {
+          width: 24px;
         }
-      }
-
-      a:hover h3::before {
-        width: 24px;
-      }
-      span {
-        @include font-2-m;
-        color: $C08-color-grey;
-        padding-left: 20px;
       }
     }
   }
 }
 
+.bicicleta-titulo-meio {
+  color: $C00-color-white;
+}
+
+.bicicleta-paragrafo-meio {
+  color: $C05-color-grey;
+}
+
+.bicicleta-li-meio {
+  color: $C05-color-grey;
+}
+
 @media (max-width: 800px) {
+  .bicicletas-bg {
+    background-image: linear-gradient(to right, #111111 30%, #111111 0%);
+  }
+
   .bicicletas {
-    &__listas {
-      padding-bottom: calculator-rem(60);
-      gap: 20px;
+    grid-template-columns: 1fr;
+    gap: calculator-rem(20);
+    padding-top: calculator-rem(40);
+    padding-bottom: calculator-rem(40);
+
+    &__conteudo {
+      a {
+        place-self: start;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicletas {
+    &__conteudo {
+      grid-template-columns: 1fr;
+
+      h2 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 16px;
+      }
 
       &--itens {
-        h3 {
-          @include font-1-xl;
-          margin-bottom: calculator-rem(8);
-          display: flex;
-          align-items: center;
+        margin-bottom: 32px;
+        grid-template-columns: 1fr 1fr;
 
-          &::before {
-            content: "";
-            background-color: $p1-color-yellow;
-            height: 8px;
-            width: 12px;
-            margin-right: 8px;
-            display: inline-block;
+        li {
+          font-size: 1rem;
+
+          a {
+            place-self: start;
           }
         }
       }

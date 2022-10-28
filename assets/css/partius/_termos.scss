@@ -1,0 +1,65 @@
+.termos-bg {
+  background-color: $C11-color-black;
+  padding-top: calculator-rem(60);
+  padding-bottom: calculator-rem(60);
+}
+
+.termos-titulo {
+  @include container;
+
+  p {
+    @include font-2-l-b;
+    color: $C05-color-grey;
+    margin-bottom: calculator-rem(4);
+  }
+
+  h1 {
+    @include font-1-xxl;
+    color: $C00-color-white;
+
+    span {
+      color: $p1-color-yellow;
+    }
+  }
+}
+
+.termos {
+  padding-top: calculator-rem(80);
+  padding-bottom: calculator-rem(80);
+  margin: 0 auto;
+  @include container;
+
+  h2 {
+    @include font-1-l;
+    font-weight: 600;
+    color: $C11-color-black;
+    margin-bottom: calculator-rem(20);
+  }
+
+  p + h2 {
+    margin-top: calculator-rem(40);
+  }
+
+  p {
+    @include font-2-s;
+    color: $C10-color-grey;
+    margin-bottom: calculator-rem(24);
+    max-width: 75ch;
+  }
+}
+
+@media (max-width: 800px) {
+  .termos-bg {
+    background-color: $C11-color-black;
+    padding-top: calculator-rem(40);
+    padding-bottom: calculator-rem(40);
+  }
+
+  .termos-titulo {
+    p {
+      font-size: calculator-rem(16);
+      text-transform: lowercase;
+      font-weight: 400;
+    }
+  }
+}
