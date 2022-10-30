@@ -1,0 +1,57 @@
+.seguro-bg {
+  background-color: $C11-color-black;
+  box-shadow: inset 0 120px $C00-color-white, inset 0 -120px $C12-color-black;
+}
+
+.seguro {
+  @include container;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calculator-rem(40);
+
+  &__imagemsg {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__conteudosg {
+    padding-top: calculator-rem(180);
+    padding-bottom: calculator-rem(180);
+
+    h2 {
+      @include font-1-xxl;
+      color: $C00-color-white;
+      margin-bottom: calculator-rem(32);
+
+      span {
+        color: $p1-color-yellow;
+      }
+    }
+    p {
+      @include font-2-l;
+      color: $C00-color-white;
+      margin-bottom: calculator-rem(20);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .seguro-bg {
+    background-color: $C11-color-black;
+    box-shadow: inset 0 -60px $C12-color-black;
+  }
+
+  .seguro {
+    grid-template-columns: 1fr;
+    gap: calculator-rem(40);
+
+    &__conteudosg {
+      grid-row: 1;
+      padding-top: calculator-rem(40);
+      padding-bottom: calculator-rem(0);
+    }
+  }
+}

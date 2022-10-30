@@ -1,0 +1,158 @@
+.bicicletas-venda {
+  h1 {
+    @include font-1-xxl;
+    color: $C00-color-white;
+  }
+
+  p {
+    text-transform: uppercase;
+  }
+}
+
+.bike {
+  @include container;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: calculator-rem(40);
+  padding-top: calculator-rem(60);
+  padding-bottom: calculator-rem(60);
+
+  &__bicicleta-imagem {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calculator-rem(20);
+
+    img {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    img:first-child {
+      min-width: 100%;
+    }
+  }
+
+  &__bicicleta-conteudo {
+    p {
+      @include font-2-xl;
+      color: $C05-color-grey;
+      margin-bottom: calculator-rem(32);
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    span {
+      @include font-1-xs;
+      color: $C06-color-grey;
+    }
+  }
+
+  &__bicicleta-comprar {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    justify-items: start;
+    gap: 8px 12px;
+    margin-bottom: calculator-rem(40);
+
+    a {
+      grid-row: span 2;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      background-color: $C12-color-black;
+      padding: 4px 8px;
+      border-radius: calculator-rem(8);
+      gap: calculator-rem(8);
+    }
+  }
+
+  h2 {
+    @include font-1-xs;
+    color: $C00-color-white;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    margin-bottom: calculator-rem(12);
+  }
+
+  &__bicicleta-informacoes {
+    padding: calculator-rem(12);
+    background-color: $C12-color-black;
+    border-radius: calculator-rem(4);
+    margin-bottom: calculator-rem(40);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: calculator-rem(32);
+
+    h3 {
+      @include font-1-m;
+      color: $C00-color-white;
+      margin-bottom: calculator-rem(8);
+    }
+
+    p {
+      @include font-2-xs;
+      color: $C05-color-grey;
+    }
+
+    img {
+      width: calculator-rem(24);
+      margin-bottom: calculator-rem(8);
+    }
+  }
+
+  &__bicicleta-ficha {
+    padding: calculator-rem(12);
+    background-color: $C12-color-black;
+    border-radius: calculator-rem(4);
+
+    li {
+      @include font-2-s;
+      color: $C04-color-grey;
+      padding: 4px 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $C11-color-black;
+
+      span {
+        @include font-2-s;
+        color: $C06-color-grey;
+      }
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .bike {
+    grid-template-columns: 1fr;
+    padding-top: calculator-rem(40);
+    padding-bottom: calculator-rem(40);
+
+    &__bicicleta-imagem {
+      grid-row: 2;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .bike {
+    &__bicicleta-comprar {
+      grid-template-columns: 1fr;
+    }
+
+    &__bicicleta-informacoes {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.modelos-container {
+  @include container;
+}

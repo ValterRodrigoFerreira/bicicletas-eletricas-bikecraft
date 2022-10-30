@@ -1,0 +1,28 @@
+.contato {
+  @include container;
+
+  &__endereco {
+    h2 {
+      @include font-1-m;
+      color: $C00-color-white;
+    }
+
+    p {
+      @include font-2-s;
+      color: $C04-color-grey;
+    }
+  }
+
+  &__meios {
+    a {
+      @include font-2-s;
+      color: $C04-color-grey;
+    }
+  }
+
+  &__redes {
+    img {
+      background-color: $p1-color-yellow;
+    }
+  }
+}

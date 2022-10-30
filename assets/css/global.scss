@@ -41,6 +41,10 @@ dd {
   margin: 0px;
 }
 
+button {
+  border: none;
+}
+
 .botao {
   display: inline-block;
   background: linear-gradient(#ffbf00, #f2a50c);
@@ -120,21 +124,34 @@ $container-l: 1200px;
 $container-m: 800px;
 $container-s: 600px;
 
-@import "partius/colors.scss";
-@import "partius/mixin.scss";
-@import "partius/tipografia.scss";
-@import "./partius/_header.scss";
-@import "./partius/introducao.scss";
-@import "./partius/modelos-bicicletas.scss";
-@import "./partius/tecnologia.scss";
-@import "./partius/parceiros.scss";
-@import "./partius/depoimentos.scss";
-@import "./partius/seguros.scss";
-@import "./partius/footer.scss";
+/* utilitarios */
+@import "partius/utilitarios/colors.scss";
+@import "partius/utilitarios/mixin.scss";
+@import "partius/utilitarios/tipografia.scss";
+@import "partius/utilitarios/formularios";
 
-@import "./partius/termos.scss";
-@import "./partius/bicicletas.scss";
-@import "./partius/seguros-pagina.scss";
-@import "./partius/perguntas.scss";
+/* home */
+@import "./partius/home/header.scss";
+@import "./partius/home/introducao.scss";
+@import "./partius/home/modelos-bicicletas.scss";
+@import "./partius/home/tecnologia.scss";
+@import "./partius/home/parceiros.scss";
+@import "./partius/home/depoimentos.scss";
+@import "./partius/home/seguros.scss";
+@import "./partius/home/footer.scss";
 
-@import "./partius/bicicletas-vendas.scss";
+/* termos */
+@import "./partius/termos/termos.scss";
+
+/* seguros */
+@import "./partius/seguros/seguros-pagina.scss";
+@import "./partius/seguros/perguntas.scss";
+
+/* bicicletas */
+@import "./partius/bicicleta/bicicletas.scss";
+@import "./partius/bicicleta/bicicletas-vendas.scss";
+@import "./partius/bicicleta/bicicletas-vendas-seguros.scss";
+
+/* contato */
+@import "./partius/contato/contato.scss";
+@import "./partius/contato/lojas.scss";
