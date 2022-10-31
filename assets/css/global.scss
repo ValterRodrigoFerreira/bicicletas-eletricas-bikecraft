@@ -58,6 +58,8 @@ button {
   font-family: "poppins", sans-serif;
   font-weight: 600;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 
   .botao:hover {
     background: linear-gradient(#ffb60d, #e59317);
@@ -78,6 +80,8 @@ button {
   font-family: "poppins", sans-serif;
   font-weight: 600;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 
   .botao-secundario:hover {
     background-color: #404040;
@@ -97,6 +101,8 @@ button {
   font-family: "poppins", sans-serif;
   font-weight: 600;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 
   &::after {
     content: "";

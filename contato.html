@@ -39,13 +39,14 @@
     <div class="contato">
       <section class="contato__endereco" aria-label="Endereço">
         <h2>Loja Online</h2>
-        <div>
+
+        <div class="contato__endereco--end">
           <p>Av. Brasilio Pereira de Melo 422</p>
           <p>São Paulo - SP</p>
         </div>
         <address class="contato__meios">
           <a href="mailto:valter.rodrigo.ferreira@gmail.com">e-mail: valter.rodrigo.ferreira@gmail.com</a>
-          <li><a href="tel:+5511979991089">Tel: +55 11 97999-1089</a></li>
+          <a href="tel:+5511979991089">Tel: +55 11 97999-1089</a>
         </address>
 
         <div class="contato__redes contato-bg">
@@ -57,36 +58,72 @@
 
           <a href="mailto:valter.rodrigo.ferreira@gmail.com"><img class="img-redesocial" src="./assets/images/img/redes/icons8-mail.svg" alt="icone de e-mail"></a>
         </div>
-
       </section>
 
       <section class="contato__formulario" aria-label="Formulário">
         <form class="form" action="./contato.html">
           <div>
             <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            <input class="estilo-input-textarea" type="text" id="nome" name="nome" placeholder="Seu nome">
           </div>
 
           <div>
             <label for="tel">Telefone</label>
-            <input type="text" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+            <input class="estilo-input-textarea" type="text" id="telefone" name="telefone" placeholder="(99) 99999-9999">
           </div>
 
-          <div>
+          <div class="col-2">
             <label for="email">email</label>
-            <input type="email" id="email" name="email" placeholder="seuemail@email.com">
+            <input class="estilo-input-textarea" type="email" id="email" name="email" placeholder="seuemail@email.com">
           </div>
 
-          <div>
-            <label for="mensagem">mensagem</label>
-            <textarea rows="5" type="mensagem" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+          <div class="col-2">
+            <label for="mensagem">Mensagem</label>
+            <textarea class="estilo-input-textarea" rows="5" type="mensagem" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
           </div>
-          <button class="botao">Enviar Mensagem</button>
+          <button class="botao col-2">Enviar Mensagem</button>
         </form>
       </section>
     </div>
-
   </main>
+
+  <article class="lojas">
+    <h2>lojas locais<span>.</span></h2>
+
+    <div class="lojas__localizacao">
+      <img src="/assets/images/img/lojas/sp.jpg" alt="Mapa ficticio marcando o endereço da loja fisica">
+      <div class="lojas__conteudo">
+        <h3>São Paulo</h3>
+        <div class="lojas__endereco">
+          <p>Rua Ali Perto nº 25</p>
+          <p>São Paulo - SP</p>
+        </div>
+
+        <div class="lojas__endereco">
+          <a href="mailto:valter.rodrigo.ferreira@gmail.com">valter.rodrigo.ferreira@gmail.com</a>
+          <a href="tel:+5511979991089">Tel: +55 11 97999-1089</a>
+        </div>
+        <p class="lojas-tempo"><img src="./assets/images/img/icones/horario.svg" alt=""> 08-18 de seg à dom</p>
+      </div>
+    </div>
+
+    <div class="lojas__localizacao">
+      <img src="/assets/images/img/lojas/rj.jpg" alt="Mapa ficticio marcando o endereço da loja fisica">
+      <div class="lojas__conteudo">
+        <h3>Rio de Janeiro</h3>
+        <div class="lojas__endereco">
+          <p>Rua Ali Perto nº 25</p>
+          <p>Rio de Janeiro - RJ</p>
+        </div>
+
+        <div class="lojas__endereco">
+          <a href="mailto:valter.rodrigo.ferreira@gmail.com">valter.rodrigo.ferreira@gmail.com</a>
+          <a href="tel:+5511979991089">Tel: +55 11 97999-1089</a>
+        </div>
+        <p class="lojas-tempo"><img src="./assets/images/img/icones/horario.svg" alt=""> 08-18 de seg à dom</p>
+      </div>
+    </div>
+  </article>
 
   <footer class="footer-bg">
     <div class="footer">
