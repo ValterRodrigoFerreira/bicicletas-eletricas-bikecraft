@@ -1,0 +1,99 @@
+#orcamento {
+  background: linear-gradient(#111111 600px, #f7f7f7 0px);
+}
+
+.orcamento {
+  @include container;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: calculator-rem(120);
+
+  h2 {
+    @include font-1-xs;
+    color: $C05-color-grey;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: calculator-rem(4);
+      height: calculator-rem(8);
+      background-color: $p1-color-yellow;
+      position: absolute;
+      left: -12px;
+    }
+  }
+
+  &__produto {
+    padding: calculator-rem(60);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px 0 0 5px;
+
+    background-color: $C12-color-black;
+
+    label {
+      background-color: #ccc;
+      padding: calculator-rem(20);
+      display: inline-block;
+    }
+  }
+
+  &__conteudo {
+    display: none;
+
+    padding: calculator-rem(20);
+    color: #222;
+    h2 {
+      @include font-1-m;
+      color: $C00-color-white;
+    }
+  }
+
+  &__dados {
+    padding: calculator-rem(60);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 0 5px 0 5px;
+    background-color: $C00-color-white;
+    h2 {
+      @include font-1-xs;
+      color: $C09-color-grey;
+    }
+  }
+}
+
+/* ou #bikecraft:checked + label + input + label + #orcamento-bikecraft, */
+
+#bikecraft:checked ~ #orcamento-seguro {
+  display: block;
+}
+
+#seguro:checked ~ #orcamento-bikecraft {
+  display: block;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  label {
+    display: block;
+    font-size: calculator-rem(16);
+    font-weight: 600;
+    line-height: 1.5;
+    font-family: "Poppins" sans-serif;
+    margin-bottom: calculator-rem(4px);
+  }
+
+  .estilo-input-textarea {
+    font-size: calculator-rem(16);
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    background-color: $C01-color-white;
+    border: 1px solid $C02-color-white;
+  }
+}
