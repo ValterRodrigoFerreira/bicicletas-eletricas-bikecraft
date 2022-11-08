@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="decription" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medidas para o cliente. Explore o mundo na sua velocidade com BikeCraft.">
+  <link rel="preload" href="./assets/css/global.css" as="style">
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,7 @@
 <body>
   <header>
     <div class="header">
-      <a href="./"><img src="./assets/images/img/bikcraft.svg" alt="Logo da empresa BikeCraft" title="Logotipo da empresa de bicicletas elétricas BikeCraft"></a>
+      <a href="./"><img src="./assets/images/img/bikcraft.svg" width="136" height="32" alt="Logo da empresa BikeCraft" title="Logotipo da empresa de bicicletas elétricas BikeCraft"></a>
 
       <nav aria-label="primaria" class="header__menu">
         <ul class="header__menu--list">
@@ -36,9 +37,11 @@
         <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com BikeCraft</p>
         <a class="botao" href="./bicicletas.html">Escolha a sua.</a>
       </div>
-      <div class="introducao__img">
+
+      <picture class="introducao__img">
+        <source media="(max-width: 800px)" srcset="./assets/images/img/bicicletas/nimbus.jpg">
         <img class="imagemintroducao" src="./assets/images/img/fotos/introducao.jpg" alt="Foto Bicicleta eletrica preta BikeCraft" title="Foto de introdução da bicicleta BikeCraft na cor preta.">
-      </div>
+      </picture>
     </div>
   </main>
 
