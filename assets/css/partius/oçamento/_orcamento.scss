@@ -206,14 +206,14 @@
   }
 }
 
-/* ou #bikecraft:checked + label + input + label + #orcamento-bikecraft, */
+/* ou #bikcraft:checked + label + input + label + #orcamento-bikcraft, */
 
-#bikecraft:checked ~ #orcamento-seguro {
+#bikcraft:checked ~ #orcamento-seguro {
   display: grid;
   gap: 20px;
 }
 
-#seguro:checked ~ #orcamento-bikecraft {
+#seguro:checked ~ #orcamento-bikcraft {
   display: grid;
   gap: 20px;
 }

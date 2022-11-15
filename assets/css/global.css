@@ -16,6 +16,7 @@ svg {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 img[src$=".jpg"] {
@@ -330,6 +331,9 @@ button {
   position: absolute;
 }
 .header__menu--list a:hover::after {
+  width: 100%;
+}
+.header__menu--list a.ativo::after {
   width: 100%;
 }
 
@@ -1069,7 +1073,7 @@ button {
   .footer {
     grid-template-columns: 1fr 1fr;
   }
-  .img-bikecraft {
+  .img-bikcraft {
     display: none;
   }
 }
@@ -1081,7 +1085,7 @@ button {
   .footer__copy {
     margin-top: 0rem;
   }
-  .img-bikecraft {
+  .img-bikcraft {
     display: none;
   }
 }
@@ -2132,13 +2136,13 @@ button {
   border: 1px solid #ededed;
 }
 
-/* ou #bikecraft:checked + label + input + label + #orcamento-bikecraft, */
-#bikecraft:checked ~ #orcamento-seguro {
+/* ou #bikcraft:checked + label + input + label + #orcamento-bikcraft, */
+#bikcraft:checked ~ #orcamento-seguro {
   display: grid;
   gap: 20px;
 }
 
-#seguro:checked ~ #orcamento-bikecraft {
+#seguro:checked ~ #orcamento-bikcraft {
   display: grid;
   gap: 20px;
 }

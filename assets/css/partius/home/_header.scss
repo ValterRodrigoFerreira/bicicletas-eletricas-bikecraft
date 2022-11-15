@@ -38,6 +38,10 @@
           width: 100%;
         }
       }
+
+      a.ativo::after {
+        width: 100%;
+      }
     }
   }
 }
