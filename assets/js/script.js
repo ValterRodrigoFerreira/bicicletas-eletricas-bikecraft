@@ -25,3 +25,5 @@ function ativarProdutos(parametro) {
 }
 
 parametros.forEach(ativarProdutos);
+
+//Perguntas Fr
