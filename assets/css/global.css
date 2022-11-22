@@ -1297,11 +1297,11 @@ button {
 .perguntas__dl--div button::after {
   content: "";
   display: inline-block;
-  width: 30px;
-  height: 12px;
-  background: url(/assets/images/img/icones/arrow_up_icon_184269.svg);
+  width: 32px;
+  height: 8px;
+  background: url(/assets/images/img/icones/ic-up_97629.svg) no-repeat;
   gap: 50px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .perguntas__dl--div dd {
   font-size: 1.125rem;
@@ -1316,6 +1316,16 @@ button {
 }
 .perguntas__dl--div dd.ativa {
   display: block;
+}
+
+button[aria-expanded=true]::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 12px;
+  background: url(/assets/images/img/icones/ic-down_97618.svg) no-repeat;
+  gap: 50px;
+  transition: 0.2s;
 }
 
 @media (max-width: 800px) {
