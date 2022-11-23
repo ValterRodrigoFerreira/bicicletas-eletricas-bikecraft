@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="decription" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medidas para o cliente. Explore o mundo na sua velocidade com bikcraft.">
+
+
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preload" href="./assets/css/global.css" as="style">
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <title>Bicicletas Elétricas - Bikcraft</title>
 
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -33,12 +37,12 @@
   <main class="introducao">
     <div class="introducao__conteudo">
       <div class="introducao__conteudo--info">
-        <h1>Bicicletas feitas sob medidas<span class="color-ponto">.</span></h1>
-        <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com bikcraft</p>
-        <a class="botao" href="./bicicletas.html">Escolha a sua.</a>
+        <h1 class="fadeInDown" data-anime="200">Bicicletas feitas sob medidas<span class="color-ponto">.</span></h1>
+        <p class="fadeInDown" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com bikcraft</p>
+        <a class="botao" data-anime="600" href="./bicicletas.html">Escolha a sua.</a>
       </div>
 
-      <picture class="introducao__img">
+      <picture class="introducao__img fadeInDown" data-anime="800">
         <source media="(max-width: 800px)" srcset="./assets/images/img/bicicletas/nimbus.jpg">
         <img class="imagemintroducao" src="./assets/images/img/fotos/introducao.jpg" alt="Foto Bicicleta eletrica preta bikcraft" title="Foto de introdução da bicicleta bikcraft na cor preta.">
       </picture>
@@ -215,7 +219,7 @@
 
     </div>
   </footer>
-
+  <script src="./assets/js/plugins/simple-anime.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 

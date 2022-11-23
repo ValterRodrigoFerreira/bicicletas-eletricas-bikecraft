@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="decription" content="Termos e condições das Bicicletas elétricas de alta precisão e qualidade, feitas sob medidas para o cliente. Explore o mundo na sua velocidade com bikcraft.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preload" href="./assets/css/global.css" as="style">
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <title>Seguros | Bikcraft</title>
 
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body id="seguros-pagina">
@@ -32,15 +34,15 @@
   <main class="seguros-bg">
     <div class="termos-bg">
       <div class="termos-titulo">
-        <p>Escolha o seguro</p>
-        <h1>você seguro<span>.</span></h1>
+        <p data-anime="200">Escolha o seguro</p>
+        <h1 data-anime="300">você seguro<span>.</span></h1>
       </div>
     </div>
 
 
     <div class="seguros">
 
-      <div class="seguros__item">
+      <div class="seguros__item fadeInLeft" data-anime="400">
         <h3 class="titulo-prata">Prata</h3>
         <span>R$ 199 <span>mensal</span></span>
         <ul class="seguros__beneficios">
@@ -52,7 +54,7 @@
         <a class="botao-secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
       </div>
 
-      <div class="seguros__item">
+      <div class="seguros__item fadeInRight" data-anime="600">
         <h3 class="titulo-ouro">Ouro</h3>
         <span>R$ 299 <span>mensal</span></span>
         <ul class="seguros__beneficios">
@@ -189,7 +191,7 @@
     </div>
 
   </footer>
-
+  <script src="./assets/js/plugins/simple-anime.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
